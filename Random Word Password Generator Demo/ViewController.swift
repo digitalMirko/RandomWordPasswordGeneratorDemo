@@ -26,19 +26,28 @@ class ViewController: UIViewController {
                          "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "!", "@", "#",
                          "$", "%", "&", "*", "-", "_"]
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
     }
 
     // Create Single Example Button -> Gives Single Example
     @IBAction func createBtn(_ sender: UIButton) {
+        if selectedText == "Password"{
+            label.text = passwordArray.randomElement()
+        } else {
+            label.text = wordArray.randomElement()
+        }
         
     }
     // Switch option for which item to demo:
     // Random Words or Password Character Generator
     @IBAction func changeSwitch(_ sender: UISwitch) {
+        if switchController.isOn == true {
+            selectedText = "Password"
+        } else {
+            selectedText = "Words"
+        }
         
     }
     // Number taged buttons which demo amount of items by number selected
