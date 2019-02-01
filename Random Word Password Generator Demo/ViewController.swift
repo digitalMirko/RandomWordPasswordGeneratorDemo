@@ -53,51 +53,131 @@ class ViewController: UIViewController {
     // Number taged buttons which demo amount of items by number selected
     // 1 item selected to be demoed
     @IBAction func clicked01Btn(_ sender: UIButton) {
-        
+        if selectedText == "Password" {
+            label.text = passwordArray.randomElement()
+        } else {
+            label.text = wordArray.randomElement()
+        }
     }
     // 2 items selected to be demoed
     @IBAction func clicked02Btn(_ sender: UIButton) {
-        
+        if selectedText == "Password" {
+            label.text = passwordArray.randomElement()! + passwordArray.randomElement()!
+        } else {
+            label.text = wordArray.randomElement()! + " " +
+            wordArray.randomElement()!
+        }
     }
     // 3 items selected to be demoed
     @IBAction func clicked03Btn(_ sender: UIButton) {
-        
+        if selectedText == "Password" {
+            label.text = passwordArray.randomElement()! + passwordArray.randomElement()! +
+                passwordArray.randomElement()!
+        } else {
+            label.text = wordArray.randomElement()! + " " +
+                wordArray.randomElement()! + " " +
+                wordArray.randomElement()!
+        }
     }
     // 4 items selected to be demoed
     @IBAction func clicked04Btn(_ sender: UIButton) {
-        
+        if selectedText == "Password" {
+            label.text = passwordArray.randomElement()! + passwordArray.randomElement()! +
+                passwordArray.randomElement()! + " - " + passwordArray.randomElement()!
+        } else {
+            label.text = wordArray.randomElement()! + " " +
+                wordArray.randomElement()! + " " +
+                wordArray.randomElement()! + " " +
+                wordArray.randomElement()!
+        }
     }
     // 5 items selected to be demoed
     @IBAction func clicked05Btn(_ sender: UIButton) {
-        
+        if selectedText == "Password" {
+            label.text = passwordArray.randomElement()! + passwordArray.randomElement()! +
+                passwordArray.randomElement()! + " - " + passwordArray.randomElement()! +
+                passwordArray.randomElement()!
+        } else {
+            label.text = wordArray.randomElement()! + " " +
+                wordArray.randomElement()! + " " +
+                wordArray.randomElement()! + " " +
+                wordArray.randomElement()! + " " +
+                wordArray.randomElement()!
+        }
     }
     // 6 items selected to be demoed
     @IBAction func clicked06Btn(_ sender: UIButton) {
-        
+        if selectedText == "Password" {
+            label.text = passwordArray.randomElement()! + passwordArray.randomElement()! +
+                passwordArray.randomElement()! + " - " + passwordArray.randomElement()! +
+                passwordArray.randomElement()! + passwordArray.randomElement()!
+        } else {
+            label.text = wordArray.randomElement()! + " " +
+                wordArray.randomElement()! + " " +
+                wordArray.randomElement()! + " " +
+                wordArray.randomElement()! + " " +
+                wordArray.randomElement()! + " " +
+                wordArray.randomElement()!
+        }
     }
     // 7 items selected to be demoed
     @IBAction func clicked07Btn(_ sender: UIButton) {
-        
+        if selectedText == "Password" {
+            label.text = passwordArray.randomElement()! + passwordArray.randomElement()! +
+                passwordArray.randomElement()! + " - " + passwordArray.randomElement()! +
+                passwordArray.randomElement()! + passwordArray.randomElement()! + " - " +
+                passwordArray.randomElement()!
+        } else {
+            label.text = wordArray.randomElement()! + " " +
+                wordArray.randomElement()! + " " +
+                wordArray.randomElement()! + " " +
+                wordArray.randomElement()! + " " +
+                wordArray.randomElement()! + " " +
+                wordArray.randomElement()! + " " +
+                wordArray.randomElement()!
+        }
     }
     // 8 items selected to be demoed
     @IBAction func clicked08Btn(_ sender: UIButton) {
-        
+        if selectedText == "Password" {
+            label.text = passwordArray.randomElement()! + passwordArray.randomElement()! +
+                passwordArray.randomElement()! + " - " + passwordArray.randomElement()! +
+                passwordArray.randomElement()! + passwordArray.randomElement()! + " - " +
+                passwordArray.randomElement()! + passwordArray.randomElement()!
+        } else {
+            label.text = wordArray.randomElement()! + " " +
+                wordArray.randomElement()! + " " +
+                wordArray.randomElement()! + " " +
+                wordArray.randomElement()! + " " +
+                wordArray.randomElement()! + " " +
+                wordArray.randomElement()! + " " +
+                wordArray.randomElement()! + " " +
+                wordArray.randomElement()!
+        }
     }
     // 9 items selected to be demoed
     @IBAction func clicked09Btn(_ sender: UIButton) {
-        
+        if selectedText == "Password" {
+            label.text = passwordArray.randomElement()! + passwordArray.randomElement()! +
+                passwordArray.randomElement()! + " - " + passwordArray.randomElement()! +
+                passwordArray.randomElement()! + passwordArray.randomElement()! + " - " +
+                passwordArray.randomElement()! + passwordArray.randomElement()! +
+                passwordArray.randomElement()!
+        } else {
+            label.text = wordArray.randomElement()! + " " +
+                wordArray.randomElement()! + " " +
+                wordArray.randomElement()! + " " +
+                wordArray.randomElement()! + " " +
+                wordArray.randomElement()! + " " +
+                wordArray.randomElement()! + " " +
+                wordArray.randomElement()! + " " +
+                wordArray.randomElement()! + " " +
+                wordArray.randomElement()!
+        }
     }
     // Resets the label back to its default text
     @IBAction func clearBtn(_ sender: UIButton) {
-        
+        label.text = "Click Button Below"
     }
-    
-    
-    
-    
-    
-    
-    
-
 }
 
