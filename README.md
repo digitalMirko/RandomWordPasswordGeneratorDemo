@@ -19,8 +19,7 @@ followed by a 'Reset' button option to reset the label back to its original defa
 Note: The text used in the Random Words is from the Lorem Ipsum website. The characters used for the password are the standard 
 alphabet along with numbers and special characters.
 
-Coming soon:
-Details and the screen cap images of the app in use can be found on <a href="http://digitalmirko.com/iOSApps.html">Digital Mirko</a>.
+Details and the screen cap images of the app in use can be found on <a href="http://digitalmirko.com/iOSAppsSwiftRWPGDemoApp.html">Digital Mirko</a>.
 
 Screen Cap on a iPhone X device:(shown below)</br>
 (Left image)App Started. <br>
